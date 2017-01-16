@@ -4,6 +4,7 @@
     <title>Enclose</title>
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/enclose.css">
   </head>
 
@@ -12,6 +13,10 @@
     <div class="percent-container">
       <span id="percent"></span>/100%
     </div>
+    <div class="level-container">
+      level: <span id="level">1</span>
+    </div>
+    <button id="restart-button" onclick="nextLevel()">New Game</button>
 
   </body>
 </html>
