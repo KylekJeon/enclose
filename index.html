@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <section class="newgame-section">
+      <div class="newgame">
+        <button id="restart-button" onclick="newGame()">New Game</button>
+      </div>
+    </section>
     <canvas id="canvas"></canvas>
     <div class="lives-container">
       Lives: <span id="lives">5</span>/5
@@ -19,7 +24,6 @@
     <div class="percent-container">
       Progress: <span id="percent"></span>/100%
     </div>
-    <button id="restart-button" onclick="nextLevel()">New Game</button>
 
   </body>
 </html>

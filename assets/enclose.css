@@ -13,3 +13,27 @@ body {
 .lives-container {
   color: white;
 }
+
+.newgame-section {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  background: rgba(75, 75, 75, .8);
+  font-size: 14px;
+}
+
+.newgame {
+  background: #999;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  padding: 10px;
+}
+
+.show {
+  display: flex;
+}
