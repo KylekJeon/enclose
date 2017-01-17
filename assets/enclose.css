@@ -1,6 +1,7 @@
 body {
   background: #000080;
   position: relative;
+  font-family: "Press Start 2P", arial;
 }
 
 .percent-container {
@@ -15,7 +16,118 @@ body {
   color: white;
 }
 
-.newgame-section {
+.info-container {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.nav-links-section {
+  font-size: 12px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+}
+
+.nav-links-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links-section a:hover {
+  color: #999;
+}
+
+.nav-links-section span {
+  margin-top: 8px;
+}
+
+.canvas-container-first {
+  padding: 15px;
+  background: #ddd;
+  width: 1090px;
+  height: 690px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.canvas-container-second {
+  padding: 15px;
+  background: #aaa;
+  width: 1060px;
+  height: 660px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.canvas-container-third {
+  padding: 15px;
+  background: #666;
+  width: 1030px;
+  height: 630px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.canvas-container-third {
+  position: relative;
+}
+
+.restart-button {
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  outline-style: none;
+  position: absolute;
+  left: 360px;
+  top: 250px;
+  display: none;
+}
+
+.restart-button:hover {
+  cursor: pointer;
+  color: green;
+}
+
+
+
+.game-title {
+  color: white;
+  text-align: center;
+}
+
+.nav-image {
+  width: 20px;
+  height: 20px;
+}
+
+.game-container{
+  position: relative;
+}
+
+.rules-button {
+  font-family: "Press Start 2P", arial;
+  padding: 5px;
+  width: 100px;
+  background: transparent;
+  color: white;
+  position: absolute;
+  left: 21.3%;
+  top: -30px;
+  outline-style: none;
+}
+
+
+.instruction-section {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -27,14 +139,26 @@ body {
   font-size: 14px;
 }
 
-.newgame {
+.instructions {
   background: #999;
+  position: absolute;
+  top: 10%;
+  left: 10%;
   width: 80%;
   height: 80%;
-  margin: auto;
-  padding: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.instructions h1{
+  font-size: 16px;
+  line-height: 2;
+}
+
+.instructions span {
+  line-height: 2;
 }
 
 .show {
-  display: flex;
+  display: block;
 }

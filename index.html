@@ -5,26 +5,72 @@
     <script type="application/javascript" src="vendor/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="assets/enclose.css">
   </head>
 
   <body>
+    <h1 class="game-title">Enclose</h1>
     <div class="game-container">
-      <section class="newgame-section">
-        <div class="newgame">
-          Play Again?
-          <button id="restart-button" onclick="newGame()">New Game</button>
+      <button class="rules-button" onclick="showRules()">Rules</button>
+      <div class="canvas-container-first">
+        <div class="canvas-container-second">
+          <div class="canvas-container-third">
+            <canvas id="canvas"></canvas>
+            <button class="restart-button" onclick="newGame()">Play Again?</button>
+            <section class="instruction-section">
+              <div class="instructions">
+                <h1>* For optimal game experience, please resize the screen using cmd(for Macs) or ctrl(for PCs) and +/- to adjust the browser size.</h1>
+                <br/>
+                <ol>
+                  <li><span>Use your arrow keys to move your avatar.</span></li>
+                  <br/>
+                  <li><span>Your avatar is green when on a "safe-spot" and red when on a "danger-spot".</span></li>
+                  <br/>
+                  <li><span>The border is the only safe spots to begin with. To fill in the board, start from a safe spot, venture out into an unsafe spot, and land back into a safe spot. Doing so will fill the area you've outlined with your avatar.</span></li>
+                  <br/>
+                  <li><span>You can now create further shapes off the area you've filled.</span></li>
+                  <br/>
+                  <li><span>Once you've filled in 70% or more of the area, you will proceed onto the next level.</span></li>
+                  <br/>
+                  <li><span>Every Level you are afforded five lives. The lives reset at every level. The marbles get faster with each level.</span></li>
+                  <li><span>And that's it! Enjoy the many shapes that Enclose allows you to create.</span></li>
+
+                </ol>
+              </div>
+            </section>
+          </div>
         </div>
-      </section>
-      <canvas id="canvas"></canvas>
-      <div class="lives-container">
-        Lives: <span id="lives">5</span>/5
       </div>
-      <div class="level-container">
-        Level: <span id="level">1</span>
+      <div class="info-container">
+        <div class="level-container">
+          Level: <span id="level">1</span>
+        </div>
+        <div class="lives-container">
+          Lives: <span id="lives">5</span>/5
+        </div>
+        <div class="percent-container">
+          Progress: <span id="percent"></span>/100%
+        </div>
       </div>
-      <div class="percent-container">
-        Progress: <span id="percent"></span>/100%
+      <div class="nav-links-section">
+        <span>Created by: Kyle Jeon</span>
+        <br>
+        <span>kylekjeon@gmail.com</span>
+        <br>
+        <br>
+        <a href="www.kylejeon.com" class="nav-links"><div class="nav-link-item">
+          <img src="img/personal.png" class="nav-image">
+          Personal
+        </div></a>
+        <a href="www.linkedin.com/in/kyle-jeon-702678126" class="nav-links"><div class="nav-link-item">
+          <img src="img/linked.png" class="nav-image">
+          LinkedIn
+        </div></a>
+        <a href="https://github.com/kylekjeon" class="nav-links"><div class="nav-link-item" href="">
+          <img src="img/github.png" class="nav-image">
+          Github
+        </div></a>
       </div>
     </div>
   </body>
