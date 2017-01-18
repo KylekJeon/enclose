@@ -54,6 +54,7 @@ body {
   height: 690px;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
 }
 
 .canvas-container-second {
@@ -121,9 +122,31 @@ body {
   background: transparent;
   color: white;
   position: absolute;
-  left: 21.3%;
+  right: 0;
   top: -30px;
   outline-style: none;
+  cursor: pointer;
+}
+
+.start-button {
+  font-family: "Press Start 2P", arial;
+  padding: 5px;
+  width: 100px;
+  background: transparent;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  outline-style: none;
+  cursor: pointer;
+}
+
+.rules-button:hover{
+  background: black;
+}
+
+.start-button:hover{
+  background: black;
 }
 
 
@@ -137,10 +160,11 @@ body {
   justify-content: center;
   background: rgba(75, 75, 75, .8);
   font-size: 14px;
+  z-index: 2;
 }
 
 .instructions {
-  background: #999;
+  background: #555;
   position: absolute;
   top: 10%;
   left: 10%;
@@ -158,6 +182,24 @@ body {
 .instructions span {
   line-height: 2;
 }
+
+#canvas {
+  position: relative;
+}
+
+.welcome-page {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1;
+  padding: 30px;
+  display: none;
+  line-height: 2;
+}
+
 
 .show {
   display: block;
