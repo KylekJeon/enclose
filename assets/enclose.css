@@ -119,7 +119,7 @@ body {
   font-family: "Press Start 2P", arial;
   padding: 5px;
   width: 100px;
-  background: transparent;
+  background: black;
   color: white;
   position: absolute;
   right: 0;
@@ -132,7 +132,7 @@ body {
   font-family: "Press Start 2P", arial;
   padding: 5px;
   width: 100px;
-  background: transparent;
+  background: black;
   color: white;
   position: absolute;
   left: 0;
@@ -142,11 +142,13 @@ body {
 }
 
 .rules-button:hover{
-  background: black;
+  background: white;
+  color: black;
 }
 
 .start-button:hover{
-  background: black;
+  background: white;
+  color: black;
 }
 
 
