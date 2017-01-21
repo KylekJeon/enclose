@@ -131,12 +131,14 @@ body {
 .start-button {
   font-family: "Press Start 2P", arial;
   padding: 5px;
-  width: 100px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
   background: black;
   color: white;
   position: absolute;
-  left: 0;
-  top: -30px;
+  left: 40%;
+  bottom: 20%;
   outline-style: none;
   cursor: pointer;
 }
@@ -147,7 +149,7 @@ body {
 }
 
 .start-button:hover{
-  background: white;
+  background: grey;
   color: black;
 }
 
@@ -200,6 +202,31 @@ body {
   padding: 30px;
   display: none;
   line-height: 2;
+}
+
+.next-level-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  z-index: 1;
+  padding: 30px;
+  display: none;
+  line-height: 2;
+}
+
+.next-level {
+  width: 50%;
+  height: 50%;
+  background: rgba(255, 255, 255, .8);
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 

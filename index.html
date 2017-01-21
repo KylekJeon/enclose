@@ -15,7 +15,6 @@
     <div class="game-container">
       <div class="canvas-container-first">
         <button class="rules-button" onclick="showRules()">Rules</button>
-        <button class="start-button" onclick="startGame()">Start</button>
         <div class="canvas-container-second">
           <div class="canvas-container-third">
             <div class="welcome-page show">
@@ -23,6 +22,13 @@
               For optimal gaming experience, please resize the screen using cmd(for Macs) or ctrl(for PCs) and +/- to adjust your screen until the game screen is to your liking.<br/><br/>
               If this is your first time, press the rules button to see how this game is played.<br/><br/>
               Otherwise, welcome back, and press the start button to get started!
+              <button class="start-button" onclick="startGame()">Start</button>
+            </div>
+            <div class="next-level-container">
+              <div class="next-level">
+                You've cleared level <span id="this-level-text"></span>! Moving onto level <span id="next-level-text"></span>.
+                <br/>Be careful, the marbles are getting faster...
+              </div>
             </div>
             <canvas id="canvas"></canvas>
             <button class="restart-button" onclick="newGame()">Play Again?</button>
